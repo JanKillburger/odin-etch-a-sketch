@@ -1,0 +1,25 @@
+:root {
+    --grid-size: 900px;
+    --grid-resolution: 16;
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    margin-block: 2em;
+}
+
+.grid {
+    max-inline-size: var(--grid-size);
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.grid > div {
+    width: calc(var(--grid-size) / var(--grid-resolution));
+    aspect-ratio: 1 / 1;
+}
